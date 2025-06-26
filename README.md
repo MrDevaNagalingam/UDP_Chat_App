@@ -1,4 +1,4 @@
-You can test the server with:
+# You can test the server with:
 
 ./udp_chat_server
 
