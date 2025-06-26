@@ -1,0 +1,10 @@
+#ifndef COMMON_H
+#define COMMON_H
+
+#define BUFFER_SIZE 1024
+#define USERNAME_SIZE 32
+#define DEFAULT_PORT 12345
+#define MAX_CLIENTS 50
+#define TIMEOUT_SECONDS 300
+
+#endif
