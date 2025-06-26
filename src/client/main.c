@@ -9,7 +9,7 @@ client_t *global_client = NULL;
 
 void client_signal_handler(int sig) {
     if (global_client) {
-        printf("\nFy Goodbye!\n");
+        printf("\n👋 Goodbye!\n");
         client_transition_to(&global_client->state, CLIENT_STATE_DISCONNECTED);
         client_cleanup(global_client);
     }
@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
     
     printf("🌟 UDP Chat Client\n");
     printf("Server: %s:%d\n", server_ip, server_port);
-    printf("──────────────────────── read username\n");
+    printf("─────────────────────────\n");
     printf("Enter your username: ");
     fflush(stdout);
     
@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
     
     printf("🚀 Connecting to chat server...\n");
     
-    if (!client_connect(&clientinit)) {
+    if (!client_connect(&client)) {
         client_cleanup(&client);
         return 1;
     }
